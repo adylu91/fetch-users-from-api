@@ -1,0 +1,74 @@
+.mainWrapper {
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  color: red;
+  font-weight: normal;
+  animation: shake 5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    left: 0;
+  }
+
+  38% {
+    left: 0;
+  }
+
+  40% {
+    left: -5px;
+  }
+
+  42% {
+    left: 0px;
+  }
+
+  44% {
+    left: 5px;
+  }
+
+  46% {
+    left: 0px;
+  }
+
+  48% {
+    left: -5px;
+  }
+
+  50% {
+    left: 0px;
+  }
+
+  52% {
+    left: 5px;
+  }
+
+  54% {
+    left: 0px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.mainUserWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.eachUser {
+  border: 2px black solid;
+  background-color: #fff;
+  flex-basis: 29%;
+  margin-bottom: 10px;
+  padding: 5px;
+}

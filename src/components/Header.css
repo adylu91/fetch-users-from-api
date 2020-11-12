@@ -1,0 +1,60 @@
+.wraper {
+  min-height: 15vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 500px;
+}
+
+.btnWraper {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  outline: none;
+  font-size: 2rem;
+  width: 160px;
+  line-height: 3rem;
+  background-color: #fff;
+  border: black solid 4px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btnLoader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  animation: show 0.3s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btnLoader img {
+  height: 100%;
+  width: auto;
+}
