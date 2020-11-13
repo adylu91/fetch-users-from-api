@@ -66,9 +66,31 @@ h2 {
 }
 
 .eachUser {
-  border: 2px black solid;
+  position: relative;
+  border: 3px black solid;
   background-color: #fff;
   flex-basis: 29%;
   margin-bottom: 10px;
   padding: 5px;
+  text-align: center;
+}
+.eachUser img {
+  border: 3px black solid;
+}
+
+.removeUserBtn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 24px;
+  outline: none;
+  background-color: grey;
+  color: white;
+  border: 3px solid black;
+  transition: 0.3s linear;
+}
+
+.removeUserBtn:hover {
+  color: black;
+  box-shadow: 0 0 3px 3px grey;
 }

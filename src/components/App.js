@@ -21,6 +21,17 @@ class App extends Component {
     });
   };
 
+  handelClickRemoveUser = (e) => {
+    let userArr = [...this.state.usersArr];
+    userArr = userArr.filter((elem) => {
+      return elem.login.uuid !== e ? elem : null;
+    });
+    console.log(userArr);
+    this.setState({
+      usersArr: userArr,
+    });
+  };
+
   fetchUsers = () => {
     const API = "https://randomuser.me/api/?results=1";
     this.setState({
@@ -55,6 +66,7 @@ class App extends Component {
         <Main
           usersArr={this.state.usersArr}
           isArrEmpty={this.state.isArrEmpty}
+          removeUser={this.handelClickRemoveUser}
         />
       </>
     );
